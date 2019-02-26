@@ -1,0 +1,22 @@
+{
+  "name": "leetcode-in-js",
+  "version": "1.0.0",
+  "description": "> My LeetCode solutions in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --config ./.prettierrc --write ./solutions/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Izayoih/LeetCode-in-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Izayoih/LeetCode-in-JS/issues"
+  },
+  "homepage": "https://github.com/Izayoih/LeetCode-in-JS#readme",
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
