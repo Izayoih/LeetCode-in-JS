@@ -27,5 +27,3 @@ var minFlipsMonoIncr = function(S) {
   }
   return Math.min(min[length - 1][0], min[length - 1][1])
 }
-
-console.log(minFlipsMonoIncr('00011000'))
