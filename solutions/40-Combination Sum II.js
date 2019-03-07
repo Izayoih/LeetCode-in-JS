@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function(candidates, target) {
+var combinationSum2 = function(candidates, target) {
   const result = []
   candidates.sort((a, b) => a - b)
 
@@ -15,7 +15,8 @@ var combinationSum = function(candidates, target) {
       return
     }
     for (let i = start; i < candidates.length; i++) {
-      dfs([...list, candidates[i]], i, acc + candidates[i])
+      if (i > start && candidates[i] === candidates[i - 1]) continue
+      dfs([...list, candidates[i]], i + 1, acc + candidates[i])
     }
   }
 
