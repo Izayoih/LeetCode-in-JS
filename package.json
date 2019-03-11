@@ -1,6 +1,6 @@
 {
   "name": "leetcode-in-js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "> My LeetCode solutions in Javascript",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/Izayoih/LeetCode-in-JS#readme",
   "devDependencies": {
+    "chalk": "^2.4.2",
+    "husky": "^1.3.1",
     "prettier": "^1.16.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "env FORCE_COLOR=1 node ./pre-commit.js"
+    }
   }
 }
