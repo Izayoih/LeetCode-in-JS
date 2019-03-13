@@ -1,3 +1,5 @@
+// 用dp dp[i][0]表示把第i的数翻成0需要的次数 dp[i][1]同理
+
 /**
  * @param {string} S
  * @return {number}
