@@ -14,7 +14,7 @@ files.forEach(filename => {
   newfile = prettier.format(newfile, config)
 
   if (newfile === file) {
-    console.log(filename + ' skipped')
+    // console.log(filename + ' skipped')
   } else {
     fs.writeFileSync(fullpath, newfile)
     execSync(`git add "${fullpath}"`)
